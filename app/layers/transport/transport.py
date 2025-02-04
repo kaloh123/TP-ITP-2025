@@ -7,7 +7,6 @@ from ...config import config
 # este método se encarga de "pegarle" a la API y traer una lista de objetos JSON.
 def getAllImages():
     raw_data = requests.get(config.STUDENTS_REST_API_URL).json()
-
     json_collection = []
 
     # si la búsqueda no arroja resultados, entonces retornamos una lista vacía de elementos.

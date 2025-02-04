@@ -1,5 +1,6 @@
 # capa de servicio/lógica de negocio
-
+import requests
+from ...config import config
 from ..transport import transport
 from ..persistence import repositories
 from ..utilities import translator
